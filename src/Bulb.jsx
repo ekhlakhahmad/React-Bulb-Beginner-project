@@ -5,7 +5,8 @@ import offImage from "./images/OFF.png";
 const Bulb = () => {
   const [on, setOn] = useState(true);
   return (
-    <div className="bulb">
+    <div className="main-container">
+      <div className="bulb">
       {on ? (
         <img src={onImage} alt="bulb on" />
       ) : (
@@ -16,6 +17,7 @@ const Bulb = () => {
         <button onClick={() => setOn(true)}>ON</button>
         <button onClick={() => setOn(false)}>OFF</button>
       </div>
+    </div>
     </div>
   );
 };
